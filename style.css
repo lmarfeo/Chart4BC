@@ -1,0 +1,619 @@
+* {
+  scroll-behavior: smooth;
+  text-decoration: none;
+}
+
+body {
+  font-family: sans-serif, "Zilla Slab";
+  margin-bottom: 50px;
+  margin-right: 100px;
+  margin-left: 100px;
+  background-color: #eaeaea;
+  
+}
+.homepage-description {
+  margin-bottom: 40px;
+}
+
+.title {
+  color: #8b0d0c;
+}
+
+.text-animate h3 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: transparent;
+  -webkit-text-stroke: 1px black;
+  background-image: linear-gradient(to right, black 50%, transparent 50%);
+  background-size: 200% 100%;
+  background-repeat: no-repeat;
+  -webkit-background-clip: text;
+  animation: textReveal 8s linear infinite, blinkCursor 1s step-end infinite;
+}
+
+@keyframes textReveal {
+  0%,
+  60% {
+    background-position: 100% 0;
+  }
+  50% {
+    background-position: 0 0;
+  }
+}
+
+@keyframes blinkCursor {
+  from,
+  to {
+    border-color: transparent;
+  }
+  50% {
+    border-color: black;
+  }
+}
+
+.text-animate h3::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 100%;
+  border-right: 2px solid black; 
+  animation: blinkCursor 1s steps(1) infinite;
+}
+/* _______ */
+
+.chart-with-links {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  margin-top: 30px;
+  text-decoration: none;
+}
+/*.chart-with-links div {
+  background-color: #ffffff;
+  align-items: center;
+  justify-content: center;
+  
+  margin-bottom: 30px;
+  margin-right: 30px;
+  border-radius: 10px;
+  padding-top: 15px;
+  padding-bottom: 20px;
+}
+.chart-with-links .link {
+  text-align: center;
+}
+
+.chart-with-links .link a {
+  text-decoration: none;
+}
+    
+.chart-with-links div .description {
+  padding-left: 30px;
+}*/
+
+/* CSS FOR HOMEPAGE BUTTON LINKS (CAN DELETE IF WE USE OTHER STYLE)  ~Lena */
+
+.chart-with-links button {
+  background-color: #ffffff;
+  box-shadow: 0px 0px 20px 0px #808080;
+  color: #000000;
+  cursor: pointer;
+  border: none;
+  outline: none;
+  font-size: 15px;
+  font-family: sans-serif, "Zilla Slab";
+  align-items: center;
+  justify-content: center;
+  margin: 10px; /* Adjust margin */
+  width: 95%; /* Set default width */
+  height: 95%; /* Set default height */
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden; /* Ensure images do not overflow */
+  text-decoration: none;
+}
+
+.chart-with-links button img {
+  width: 100%; /* Make image fill button width */
+  height: 90%; /* Maintain aspect ratio */
+  border-radius: 10px;
+  text-decoration: none;
+}
+
+.chart-with-links button:hover {
+  background-color: #efebda;
+}
+.chart-with-links button .chart-title {
+  font-weight: bold;
+  font-size: 18px;
+  color: #8a0f0a;
+  text-decoration: none;
+}
+
+.chart-with-links button .chart-description {
+  text-align: left;
+  padding-left: 30px;
+  text-decoration: none;
+}
+
+.reveal {
+  transform: scale(0.95);
+  transition: all 0.5s ease;
+}
+
+.reveal:hover {
+  transform: scale(1);
+}
+
+/* NAVBAR CSS */
+
+.navigation-bar {
+  width: 98%;
+  margin-bottom: 0px;
+  margin-top: 0;
+  display: flex;
+  align-items: center;
+}
+.navigation-bar ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  box-shadow: 0px 0px 20px 0px #808080;
+  background-color: #ffffff;
+}
+
+.navigation-bar ul li {
+  display: inline;
+  /*margin-right: 50px;*/
+  font-size: 16px;
+  /*background-color: #ffffff;
+  border-radius: 10px;*/
+  /*padding: 10px;*/
+  width: 100%;
+  flex-grow: 1;
+  text-align: center;
+}
+/*.navigation-bar ul li a:link {
+  text-decoration: none;
+  color: #000000;
+}
+.navigation-bar ul li a:hover {
+  color: #EFEBDA;
+}
+.navigation-bar ul li a:visited {
+  color: #8A0F0A;
+}*/
+.image {
+  float: left;
+  width: 20%;
+  display: inline-block;
+  margin-right: 10px;
+}
+.navigation-bar button {
+  background-color: #ffffff;
+  color: #8a0f0a;
+  cursor: pointer;
+  border: none;
+  outline: none;
+  font-family: sans-serif, "Zilla Slab";
+  align-items: center;
+  width: 100%;
+}
+
+.navigation-bar button:hover {
+  background-color: #efebda;
+}
+.navigation-bar button .link {
+  font-weight: bold;
+  font-size: 18px;
+}
+
+#menu-toggle {
+  display: none;
+}
+
+/* THIS SECTION MAKES THINGS LOOK DIFFERENT IF ON A SMALLER SCREEN */
+@media only screen and (max-width: 768px) {
+  .chart-with-links {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    align-items: center;
+    justify-content: center;
+    
+  }
+  
+  .chart-with-links button {
+    width: calc(100% - 20px); /* Make the button full width with some padding */
+    margin: 10px auto; /* Center the buttons and add some margin */
+  }
+  
+  .chart-with-links button img {
+    max-width: 100%;
+    max-height: 100%;
+  }
+  /*.navigation-bar {
+    width: 100%;
+  }
+  .navigation-bar ul {
+    list-style-type: none;
+    margin-top: 30px;
+    display: flex;
+    
+  }
+  .navigation-bar ul li {
+    display: inline;
+    margin-right: 10px;
+    font-size: 16px; 
+    justify-items: center;
+    text-align: center;
+    align-items: center;
+  }*/
+
+  .navigation-bar ul {
+    display: none; /* Hide the menu by default */
+  }
+
+  .navigation-bar.collapsible button {
+    background-color: #ffffff;
+    color: #8a0f0a;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    font-family: sans-serif, "Zilla Slab";
+    align-items: center;
+    width: 100%;
+    border-radius: 5px; /* Add rounded corners */
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1); /* Add a subtle box shadow */
+  }
+
+  .navigation-bar.collapsible button:hover {
+    background-color: #efebda;
+  }
+
+  .navigation-bar.collapsible ul {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 80%;
+    background-color: #ffffff;
+    z-index: 1;
+    transform: translate(-50%, -50%);
+  }
+
+  .navigation-bar.collapsible ul li {
+    padding: 0px;
+    width: 100%;
+    border-bottom: 3px solid #cccccc; /* Add borders between menu items */
+  }
+
+  #menu-toggle {
+    display: block;
+  }
+}
+/* FOR EACH PAGE */
+h3 {
+  font-size: 24px;
+  font-family: sans-serif, "Zilla Slab";
+  color: #8a0f0a;
+}
+
+/* RESOURCES CSS */
+
+.collapsible {
+  background-color: #ffffff;
+  color: #000000;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+  font-family: sans-serif, "Zilla Slab";
+  border-radius: 10px;
+  margin: 10px;
+  box-shadow: 0px 0px 20px 0px #808080;
+}
+
+.active,
+.collapsible:hover {
+  background-color: #efebda;
+}
+
+.resource-content,
+.plan-content,
+.major-content {
+  padding: 10px 18px;
+  background-color: #8a0f0a;
+  color: #ffffff;
+  font-size: 13px;
+  font-family: sans-serif, "Zilla Slab";
+  text-align: left;
+  border-radius: 10px;
+  margin: 15px;
+  box-sizing: border-box;
+}
+
+.resource-content button,
+.plan-content button {
+  background-color: #ffffff;
+  color: #000000;
+  cursor: pointer;
+  border: none;
+  border-radius: 5px;
+  outline: none;
+  font-size: 15px;
+  font-family: sans-serif, "Zilla Slab";
+}
+
+.major-content button{
+  background-color: #ffffff;
+  color: #000000;
+  cursor: pointer;
+  border: none;
+  border-radius: 5px;
+  outline: none;
+  font-size: 12px;
+  font-family: sans-serif, "Zilla Slab";
+}
+
+.resource-content button:hover,
+.major-content button:hover {
+  background-color: #efebda;
+}
+.resource-content.hidden,
+.plan-content.hidden,
+.major-content.hidden {
+  display: none;
+  overflow: hidden;
+}
+
+.resource-content img{
+  border-radius: 10px;
+}
+
+.resource-link a:link,
+.major-link a:link {
+  color: #000000;
+}
+
+.resource-link a:hover,
+.major-link a:hover {
+  color: #efebda;
+}
+
+.resource-link a:visited,
+.major-link a:visited {
+  color: #979ffc;
+}
+
+.plan-content iframe {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.plan a:link {
+  color: #ffffff;
+}
+
+.plan a:hover {
+  color: #ffffff;
+}
+
+.plan a:visited {
+  color: #ffffff;
+}
+
+/* FOUR YEAR PLANNING CSS */
+
+/* Grid layout styles */
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  grid-template-rows: auto 1fr 1fr;
+  height: 100vh;
+}
+
+/* Header styles */
+.header {
+  grid-column: 1 / 3;
+  text-align: center;
+  padding: 10px;
+  padding-top:0px;
+  margin-bottom:10px;
+  color: #8b0d0c;
+}
+
+.header h1{
+  text-align:center;
+  padding-top:0px;
+  margin-top:0px;
+}
+
+.header h2{
+  text-align:left;
+  padding-top:0px;
+  margin-top:0px;
+}
+
+.header button{
+    background-color: #ffffff;
+    color: #000000;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    font-size: 15px;
+    float:center;
+    font-family: sans-serif, "Zilla Slab";
+    margin-bottom: 10px;
+    padding: 6px 8px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 5px 0px #a0a0a0;
+}
+
+.header button:hover{
+  background-color:#efebda
+}
+
+/* Leftside div styles */
+.leftside {
+  grid-column: 1;
+  padding: 20px;
+  padding-top:0px;
+  margin-top:0px;
+}
+
+.leftside input[type="search"] {
+    background-color: #ffffff;
+    color: #000000;
+    border: 1px solid #cccccc;
+    border-radius: 5px;
+    padding: 8px 12px;
+    margin-top:0px;
+    margin-bottom: 20px;
+    font-size: 15px;
+    font-family: sans-serif, "Zilla Slab";
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.leftside input[type="search"]::placeholder {
+    color: #a7a7a7;
+}
+
+
+
+/* Rightside div styles */
+.rightside {
+  grid-column: 2;
+  grid-row: 2 / 4;
+  padding: 20px;
+  padding-top:0px;
+  margin-top:0px;
+}
+
+.rightside button{
+    background-color: #8a0f0a;
+    color: #ffffff;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    font-size: 15px;
+    float:right;
+    font-family: sans-serif, "Zilla Slab";
+    margin-top: 10px;
+    margin-bottom:10px;
+    padding: 6px 8px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 5px 0px #a0a0a0;
+}
+.rightside button:hover{
+  background-color:#efebda;
+  color:#000000;
+}
+
+/* Hidden paragraph styles */
+.hidden {
+  display: none;
+}
+
+
+/* FORUM STYLES */
+#asm6 {
+    background-color: #eaeaea; 
+    font-family: sans-serif, "Zilla Slab"; 
+    font-weight: 400; 
+    margin: 0;
+    padding-top: 1rem;
+}
+
+#asm6 h2 {
+    margin: 0;
+    padding: 0.25rem 0 0 0;
+    text-align: left;
+    font-size: 24px;
+    color: #8a0f0a; 
+}
+
+#asm6 section {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    grid-gap: 0.25rem;
+    margin: 0.5rem;
+}
+
+#asm6 .card {
+    background-color: #fcfcdd;
+    margin: 0.5rem;
+    padding: 1rem;
+    padding-bottom: 0.5rem;
+    border-radius: 5px 5px 25px 5px;
+    box-shadow: 0px 0px 20px 0px #909090;
+    display: flex;
+    flex-direction: column;
+}
+
+#asm6 .card img {
+    height: 200px;
+    border-radius: 10px;
+}
+
+#asm6 .card p {
+    font-size: 1rem;
+    color: #000000;
+    margin: 0.25rem 0 0 0;
+}
+
+#asm6 .card div {
+    border-top: 1pt solid #cccccc;
+    margin: 1rem 0 0 0;
+    padding: 0;
+}
+
+#asm6 .card div span {
+    float: left;
+    color: #000000;
+}
+
+#asm6 .card footer {
+    border-top: 1pt solid #cccccc;
+    margin: 1rem 0 1rem 0;
+    padding: 0;
+    font-size: 1rem;
+}
+
+#asm6 small {
+    display: inline-block;
+    background-color: #ffffff;
+    color: #000000;
+    padding: 2px;
+    margin: 0.25rem;
+}
+
+#asm6 button {
+    background-color: #ffffff;
+    color: #000000;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    font-size: 15px;
+    float:left;
+    font-family: sans-serif, "Zilla Slab";
+    margin-top: 5px;
+    padding: 6px 8px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 5px 0px #a0a0a0;
+}
+
+#asm6 button:hover {
+    background-color: #efebda;
+}

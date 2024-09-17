@@ -1,0 +1,644 @@
+{
+  "homepage": {
+    "welcome": "",
+    "about": "Hello! ...",
+    "links": {
+      "fouryearplanning": {
+        "description": "Description of section"
+      },
+      "samplePlans": {
+        "description": "Description of section"
+      },
+      "forum": {
+        "description": "Description of section"
+      },
+      "resources": {
+        "description": "Here you can find a selection of resources to help you in all areas of academic planning. If you can't find the answers you need, be sure to schedule an advising appointment through the link available on the 'Resources' page!"
+      }
+    }
+  },
+  "fouryearplanning": {
+    "majors": [
+      {
+        "name": "Computer Science B.A.",
+        "expand": {
+          "school": "MCAS",
+          "department": "Computer Science",
+          "reqslink": "https://www.bc.edu/content/bc-web/schools/morrissey/departments/computer-science/academics/programs.html",
+          "requirements": [
+            {
+              "title": "Calculus II",
+              "code": "MATH1101",
+              "description": "",
+              "prerequisites": ["MATH1100"],
+              "semesters offered": "All"
+            },
+            {
+              "title": "Linear Algebra",
+              "code": "MATH2210",
+              "description": "",
+              "prerequisites": [],
+              "semesters offered": "All"
+            },
+            {
+              "title": "Computer Science I",
+              "code": "CSCI1101",
+              "description": "",
+              "prerequisites": [],
+              "semesters offered": "All"
+            },
+            {
+              "title": "Computer Science II",
+              "code": "CSCI1102",
+              "description": "",
+              "prerequisites": ["CSCI1101"],
+              "semesters offered": "All"
+            },
+            {
+              "title": "Computer Systems",
+              "code": "CSCI2271",
+              "description": "",
+              "prerequisites": ["CSCI1102"],
+              "semesters offered": "All"
+            },
+            {
+              "title": "Computer Organization and Lab",
+              "code": "CSCI2272",
+              "description": "",
+              "prerequisites": ["CSCI1101"],
+              "semesters offered": "All"
+            },
+            {
+              "title": "Logic and Computation",
+              "code": "CSCI2243",
+              "description": "",
+              "prerequisites": ["CSCI1101"],
+              "semesters offered": "All"
+            },
+            {
+              "title": "Randomness and Computation",
+              "code": "CSCI2244",
+              "description": "",
+              "prerequisites": ["MATH1103", "CSCI2243"],
+              "semesters offered": "All"
+            },
+            {
+              "title": "Algorithms",
+              "code": "CSCI3383",
+              "description": "",
+              "prerequisites": ["CSCI1102", "CSCI2244"],
+              "semesters offered": "All"
+            },
+            {
+              "title": "CS 2000-level elective",
+              "code": "CSCI2xxx",
+              "description": "",
+              "prerequisites": ["CSCI1101"],
+              "semesters offered": "All"
+            },
+            {
+              "title": "CS 3000-level elective",
+              "code": "CSCI3xxx",
+              "description": "",
+              "prerequisites": ["CSCI2271 or CSCI2243"],
+              "semesters offered": "All"
+            },
+            {
+              "title": "CS 3000-level elective",
+              "code": "CSCI3xxx",
+              "description": "",
+              "prerequisites": ["CSCI2271 or CSCI2243"],
+              "semesters offered": "All"
+            },
+
+            {
+              "title": "CS 3000-level elective",
+              "code": "CSCI3xxx",
+              "description": "",
+              "prerequisites": ["CSCI2271 or CSCI2243"],
+              "semesters offered": "All"
+            }
+          ]
+        }
+      },
+      {
+        "name": "Economics B.A.",
+        "expand": {
+          "school": "MCAS",
+          "department": "Economics",
+          "reqslink": "https://www.bc.edu/content/bc-web/schools/morrissey/departments/economics/undergraduate/major-and-minor.html",
+          "requirements": [
+            {
+              "title": "Principles of Economics",
+              "code": "ECON1101",
+              "description": "",
+              "prerequisites": [],
+              "semesters offered": "All"
+            },
+            {
+              "title": "Statistics",
+              "code": "ECON1151",
+              "description": "",
+              "prerequisites": [],
+              "semesters offered": "All"
+            },
+            {
+              "title": "Calculus I",
+              "code": "MATH1101",
+              "description": "",
+              "prerequisites": [],
+              "semesters offered": "All"
+            },
+            {
+              "title": "Microeconomic Theory",
+              "code": "ECON2201",
+              "description": "",
+              "prerequisites": ["MATH1100", "ECON1101"],
+              "semesters offered": "All"
+            },
+            {
+              "title": "Macroeconomic Theory",
+              "code": "ECON2202",
+              "description": "",
+              "prerequisites": ["MATH1100", "ECON1101"],
+              "semesters offered": "All"
+            },
+            {
+              "title": "Econometric Methods",
+              "code": "ECON2228",
+              "description": "",
+              "prerequisites": ["MATH1100", "ECON1151"],
+              "semesters offered": "All"
+            },
+            {
+              "title": "Econ 2000+ level elective",
+              "code": "ECON2xxx",
+              "description": "",
+              "prerequisites": ["ECON1101"],
+              "semesters offered": "All"
+            },
+            {
+              "title": "Econ 2000+ level elective",
+              "code": "ECON2xxx",
+              "description": "",
+              "prerequisites": ["ECON1101"],
+              "semesters offered": "All"
+            },
+            {
+              "title": "Econ 3000+ level elective",
+              "code": "ECON3xxx",
+              "description": "",
+              "prerequisites": ["varies"],
+              "semesters offered": "All"
+            },
+            {
+              "title": "Econ 3000+ level elective",
+              "code": "ECON3xxx",
+              "description": "",
+              "prerequisites": ["varies"],
+              "semesters offered": "All"
+            },
+            {
+              "title": "Econ 3000+ level elective",
+              "code": "ECON3xxx",
+              "description": "",
+              "prerequisites": ["varies"],
+              "semesters offered": "All"
+            },
+            {
+              "title": "Econ 3000+ level elective",
+              "code": "ECON3xxx",
+              "description": "",
+              "prerequisites": ["varies"],
+              "semesters offered": "All"
+            }
+          ]
+        }
+      },
+      {
+        "name": "Political Science B.A.",
+        "expand": {
+          "school": "MCAS",
+          "department": "Political Science",
+          "reqslink": "https://www.bc.edu/content/bc-web/schools/morrissey/departments/political-science/undergraduate.html",
+          "requirements": [
+            {
+              "title": "Fundamental Concepts/How to Rule the World",
+              "code": "POLI1041/POLI1021",
+              "description": "",
+              "prerequisites": [],
+              "semesters offered": "Fall"
+            },
+            {
+              "title": "Intro to Modern / American / International / Comparative Politics",
+              "code": "POLI1042/1061/1081/1091",
+              "description": "",
+              "prerequisites": [],
+              "semesters offered": "varies"
+            },
+            {
+              "title": "American subfield elective",
+              "code": "POLIx3xx",
+              "description": "",
+              "prerequisites": [],
+              "semesters offered": "All"
+            },
+            {
+              "title": "Comparative subfield elective",
+              "code": "POLIx4xx",
+              "description": "",
+              "prerequisites": [],
+              "semesters offered": "All"
+            },
+            {
+              "title": "International subfield elective",
+              "code": "POLIx5xx",
+              "description": "",
+              "prerequisites": [],
+              "semesters offered": "All"
+            },
+            {
+              "title": "Political Theory subfield elective",
+              "code": "POLIx6xx",
+              "description": "",
+              "prerequisites": [],
+              "semesters offered": "All"
+            },
+            {
+              "title": "Poli sci elective (any non-intro course)",
+              "code": "POLI2xxx",
+              "description": "",
+              "prerequisites": [],
+              "semesters offered": "All"
+            },
+            {
+              "title": "Poli sci elective (any non-intro course)",
+              "code": "POLI2xxx",
+              "description": "",
+              "prerequisites": [],
+              "semesters offered": "All"
+            },
+            {
+              "title": "Poli sci elective (any non-intro course)",
+              "code": "POLI2xxx",
+              "description": "",
+              "prerequisites": [],
+              "semesters offered": "All"
+            },
+            {
+              "title": "Poli sci elective (any non-intro course)",
+              "code": "POLI2xxx",
+              "description": "",
+              "prerequisites": [],
+              "semesters offered": "All"
+            }
+          ]
+        }
+      },
+      {
+        "name": "Psychology B.S.",
+        "expand": {
+          "school": "MCAS",
+          "department": "Psychology and Neuroscience",
+          "reqslink": "https://www.bc.edu/content/bc-web/academics/sites/university-catalog/undergraduate/mcas/psychology.html",
+          "requirements": [
+            {
+              "title": "Brain, Mind, & Behavior",
+              "code": "PSYC1110",
+              "description": "",
+              "prerequisites": [],
+              "semesters offered": "All"
+            },
+            {
+              "title": "Self, Mind, & Society",
+              "code": "PSYC1111",
+              "description": "",
+              "prerequisites": [],
+              "semesters offered": "All"
+            },
+            {
+              "title": "Introduction to Behavioral Statistics and Research I",
+              "code": "PSYC1111",
+              "description": "",
+              "prerequisites": [],
+              "semesters offered": "All"
+            },
+            {
+              "title": "PSYC 2000-level (from bucket 1/3)",
+              "code": "PSYC2xxx",
+              "description": "",
+              "prerequisites": ["PSYC1110 or PSYC1111"],
+              "semesters offered": "varies"
+            },
+            {
+              "title": "PSYC 2000-level (from bucket 2/3)",
+              "code": "PSYC2xxx",
+              "description": "",
+              "prerequisites": ["PSYC1110 or PSYC1111"],
+              "semesters offered": "varies"
+            },
+            {
+              "title": "PSYC 2000-level (from bucket 3/3)",
+              "code": "PSYC2xxx",
+              "description": "",
+              "prerequisites": ["PSYC1110 or PSYC1111"],
+              "semesters offered": "varies"
+            },
+            {
+              "title": "PSYC 2000+ elective (any)",
+              "code": "PSYC2xxx",
+              "description": "",
+              "prerequisites": ["PSYC1110 or PSYC1111"],
+              "semesters offered": "All"
+            },
+            {
+              "title": "PSYC 3000-level elective",
+              "code": "PSYC3xxx",
+              "description": "",
+              "prerequisites": ["varies"],
+              "semesters offered": "All"
+            },
+            {
+              "title": "PSYC 3000-level elective",
+              "code": "PSYC3xxx",
+              "description": "",
+              "prerequisites": ["varies"],
+              "semesters offered": "All"
+            },
+            {
+              "title": "PSYC 3000-level elective",
+              "code": "PSYC3xxx",
+              "description": "",
+              "prerequisites": ["varies"],
+              "semesters offered": "All"
+            },
+            {
+              "title": "PSYC 3000-level elective",
+              "code": "PSYC3xxx",
+              "description": "",
+              "prerequisites": ["varies"],
+              "semesters offered": "All"
+            },
+            {
+              "title": "PSYC 3000-level elective",
+              "code": "PSYC3xxx",
+              "description": "",
+              "prerequisites": ["varies"],
+              "semesters offered": "All"
+            },
+            {
+              "title": "CS 1, Finite Probab, Calculus I, or Linear Algebra",
+              "code": "CSCI1101/MATH1004/MATH1100/MATH1102/MATH2210",
+              "description": "",
+              "prerequisites": [],
+              "semesters offered": "All"
+            },
+            {
+              "title": "CS 1, Finite Probab, Calculus I, or Linear Algebra",
+              "code": "CSCI1101/MATH1004/MATH1100/MATH1102/MATH2210",
+              "description": "",
+              "prerequisites": [],
+              "semesters offered": "All"
+            },
+            {
+              "title": "Related science (see list on external requirements page)",
+              "code": "",
+              "description": "",
+              "prerequisites": [],
+              "semesters offered": "All"
+            },
+            {
+              "title": "Related science (see list on external requirements page)",
+              "code": "",
+              "description": "",
+              "prerequisites": [],
+              "semesters offered": "All"
+            },
+            {
+              "title": "Related science (see list on external requirements page)",
+              "code": "",
+              "description": "",
+              "prerequisites": [],
+              "semesters offered": "All"
+            },
+            {
+              "title": "Related science (see list on external requirements page)",
+              "code": "",
+              "description": "",
+              "prerequisites": [],
+              "semesters offered": "All"
+            }
+          ]
+        }
+      },
+      {
+        "name": "Mathematics B.A.",
+        "expand": {
+          "school": "MCAS",
+          "department": "Mathematics",
+          "reqslink": "https://www.bc.edu/content/bc-web/schools/morrissey/departments/math/undergraduate/majors-and-minors.html",
+          "requirements": [
+            {
+              "title": "Calculus I (Mathematics/Science Majors)",
+              "code": "MATH1102",
+              "description": "",
+              "prerequisites": [],
+              "semesters offered": "All"
+            },
+            {
+              "title": "Calculus II (Mathematics/Science Majors)",
+              "code": "MATH1103",
+              "description": "",
+              "prerequisites": ["MATH1102"],
+              "semesters offered": "All"
+            },
+            {
+              "title": "Multivariable Calculus (Honors?)",
+              "code": "MATH2202/3",
+              "description": "",
+              "prerequisites": ["MATH1103"],
+              "semesters offered": "All"
+            },
+            {
+              "title": "Linear Algebra (Honors?)",
+              "code": "MATH2210/1",
+              "description": "",
+              "prerequisites": [],
+              "semesters offered": "All"
+            },
+            {
+              "title": "Introduction to Abstract Mathematics",
+              "code": "MATH2216",
+              "description": "",
+              "prerequisites": [],
+              "semesters offered": "All"
+            },
+            {
+              "title": "Introduction to Abstract Algebra",
+              "code": "MATH3310",
+              "description": "",
+              "prerequisites": ["MATH2210", "MATH2216"],
+              "semesters offered": "All"
+            },
+            {
+              "title": "Introduction to Analysis",
+              "code": "MATH3320",
+              "description": "",
+              "prerequisites": ["MATH2202", "MATH2216"],
+              "semesters offered": "All"
+            },
+            {
+              "title": "Math 4000+ level elective",
+              "code": "MATH4xxx",
+              "description": "",
+              "prerequisites": ["MATH2202", "MATH2210"],
+              "semesters offered": "All"
+            },
+            {
+              "title": "Math 4000+ level elective",
+              "code": "MATH4xxx",
+              "description": "",
+              "prerequisites": ["MATH2202", "MATH2210"],
+              "semesters offered": "All"
+            },
+            {
+              "title": "Math 4000+ level elective",
+              "code": "MATH4xxx",
+              "description": "",
+              "prerequisites": ["MATH2202", "MATH2210"],
+              "semesters offered": "All"
+            },
+            {
+              "title": "Math 4000+ level elective",
+              "code": "MATH4xxx",
+              "description": "",
+              "prerequisites": ["MATH2202", "MATH2210"],
+              "semesters offered": "All"
+            },
+            {
+              "title": "Math 4000+ level elective",
+              "code": "MATH4xxx",
+              "description": "",
+              "prerequisites": ["MATH2202", "MATH2210"],
+              "semesters offered": "All"
+            },
+            {
+              "title": "Math 4000+ level elective",
+              "code": "MATH4xxx",
+              "description": "",
+              "prerequisites": ["MATH2202", "MATH2210"],
+              "semesters offered": "All"
+            }
+          ]
+        }
+      }
+    ]
+  },
+  "samplePlans": [
+    {
+      "SampleNo": "Sample 1",
+      "details": [
+        {
+          "major": "Biology",
+          "minor": "Chinese",
+          "track": "Pre-health",
+          "link": "https://docs.google.com/spreadsheets/d/1khpRQ99BYTVxwtF2d07bxDC5rKjgHNu6loO6sVOvSDA/edit",
+          "clickme": "View plan in new tab for Biology, Chinese, Pre-health"
+        }
+      ]
+    },
+    {
+      "SampleNo": "Sample 2",
+      "details": [
+        {
+          "major": "Environmental Studies",
+          "minor": "German, Philosophy",
+          "link": "https://docs.google.com/spreadsheets/d/1rnaLarTmmpsiaahCnM7FouVqzSHPcvd8/edit?usp=sharing&ouid=105212342911845877196&rtpof=true&sd=true",
+          "clickme": "View plan in new tab for Environmental Studies, German, Philosophy"
+        }
+      ]
+    },
+    {
+      "SampleNo": "Sample 3",
+      "details": [
+        {
+          "major": "Math and Economics",
+          "link": "https://docs.google.com/spreadsheets/d/1UueQFOncGUVLJ6h77TZJ_EVtBDu6OGh1zzxCskwyclY/edit?usp=sharing",
+          "clickme": "View plan in new tab for Math and Economics"
+        }
+      ]
+    },
+    {
+      "SampleNo": "Sample 4",
+      "details": [
+        {
+          "major": "Psychology",
+          "minor": "Public Health",
+          "track": "Pre-PA",
+          "link": "https://docs.google.com/spreadsheets/d/1HBPPTMBpwRjz1luB7-ElD4MlEw5kgwiprbUFKggt3ko/edit?usp=sharing",
+          "clickme": "View plan in new tab for Psychology, Public Health, Pre-PA"
+        }
+      ]
+    },
+    {
+      "SampleNo": "Sample 5",
+      "details": [
+        {
+          "major": "Neuroscience",
+          "track": "Pre-health",
+          "link": "https://docs.google.com/spreadsheets/d/1EbXJvrU-6WUgBFUHmKPO-MEhOfuOWkI323MkJZM8Syw/edit?usp=sharing",
+          "clickme": "View plan in new tab for Neuroscience, Pre-health"
+        }
+      ]
+    },
+    {
+      "SampleNo": "Sample 6",
+      "details": [
+        {
+          "major": "Economics",
+          "link": "https://docs.google.com/spreadsheets/d/1FEAYqTKggFw2br8fYWOinuZ4AxX8H_aH/edit?usp=sharing&ouid=105212342911845877196&rtpof=true&sd=true",
+          "clickme": "View plan in new tab for Economics"
+        }
+      ]
+    }
+  ],
+  "forum": {},
+  "resources": [
+    {
+      "name": "GPA Calculator",
+      "expand": {
+        "description": "Want an easy way to calculate your GPA? The advising center has created a spreadsheet where you can input classes and letter grades from current and past semesters. Just click on the link below to access the google sheet! If you'd like to add more classes, just copy and paste cells in the 'Past Semesters' block.",
+        "link": "http://tinyurl.com/MCASgpaCalculator",
+        "clickme": "What's my GPA?",
+        "previewimage":"https://cdn.glitch.global/f0d12085-1ba6-4cb9-a5e5-4a6e1bf88f1b/Screen%20Shot%202024-04-26%20at%2010.47.37%20AM.png?v=1714144112465"
+      }
+    },
+    {
+      "name": "O*Net Browse by Interests",
+      "expand": {
+        "description": "Having trouble finding a career that suits you? O*Net is a national occupational information site that allows you to reasearch careers based on anything from abilities to interests to skills. By using O*Net you can learn about numerous jobs that you never previously considered! ",
+        "link": "https://www.onetonline.org/find/descriptor/browse/2.C",
+        "clickme": "Research Careers!",
+        "previewimage":"https://cdn.glitch.global/f0d12085-1ba6-4cb9-a5e5-4a6e1bf88f1b/Screen%20Shot%202024-04-26%20at%2010.47.04%20AM.png?v=1714144110369"
+      }
+    },
+    {
+      "name": "Schedule a 30-min Advising Appointment",
+      "expand": {
+        "description": "Need some academic advice? By scheduling a 30 minute appointment with the advising center, you can discuss anything from creating a four year plan to academic uncertainties. Just click on the link below to quickly start the process!",
+        "link": "http://bc.edu/advisingfellows",
+        "clickme": "Book Now!",
+        "previewimage":"https://cdn.glitch.global/f0d12085-1ba6-4cb9-a5e5-4a6e1bf88f1b/Screen%20Shot%202024-04-27%20at%206.11.28%20PM.png?v=1714255896255"
+      }
+    },
+    {
+      "name": "Student Destinations",
+      "expand": {
+        "description": "Are you having trouble picking a major or lacking confidence in your prospective field? If so, Boston College has created a site which displays statistics regarding where BC graduates have ended up within the first year of graduation. This is made possible through a survey sent out after graduation so make sure to fill it out!",
+        "link": "https://public.tableau.com/app/profile/bcirpa/viz/shared/DFM6Q5HFJ",
+        "clickme": "Look at Graduate Statistics!",
+        "previewimage":"https://cdn.glitch.global/f0d12085-1ba6-4cb9-a5e5-4a6e1bf88f1b/Screen%20Shot%202024-04-26%20at%2010.45.13%20AM.png?v=1714144109597"
+      }
+    }
+  ]
+}
